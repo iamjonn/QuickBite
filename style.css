@@ -73,7 +73,7 @@ body {
 
   .main-content{
     background-color: #cbb26a;
-    background-image: linear-gradient(0deg, #ffffff 14%, #ffffff 51%, #3fc6ab 100%);
+    background-image: linear-gradient(0deg, #e0f6f1 14%, #e0f6f1 71%, #3fc6ab 100%);
 
   }
 
@@ -207,8 +207,10 @@ body {
 
   #teste {
   width: 100%;
+  height: 900px;
   padding-bottom: 500px;
-  border: solid red;
+  background-color: #e0f6f1;
+  }
 
 #encurtador{
   width: 80%;
@@ -217,15 +219,17 @@ body {
   margin-top: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
-  border: #000000 solid 1px;
+  border: none;
   border-radius: 7px;
-  background-color: #3fc6ab;
+  background-image: url(/QuickBite/logos/bg-header-desktop.svg);
+  background-color: #000000;
+ /* background-color: #3fc6ab;
 opacity: 1;
 background-color: #3fc6ab;
 opacity: 0.7;
 background-color: #3fc6ab;
 opacity: 0.8;
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #3fc6ab 11px ), repeating-linear-gradient( #ffffff55, #ffffff );
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #3fc6ab 11px ), repeating-linear-gradient( #ffffff55, #ffffff );*/
 }
 
 
@@ -235,6 +239,8 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #3fc
   font-size: 20px;
   padding-left: 20px;
   font-family: 'Imbue', serif;
+  border-radius: 4px;
+  border: none;
 }
 
 #Blink{
@@ -243,6 +249,15 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #3fc
   margin-left: 3%;
   font-size: 23px;
   font-family: 'Imbue', serif;
+  border-radius: 4px;
+  border: 1px;
+  background-color: #ffffff;
+}
+
+#Blink:hover {
+  color: #63baba;
+  transition: 100ms;
+  border: solid #000000 1px;
 }
 
   /*========SCROLL==========*/
@@ -255,9 +270,8 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #3fc
     background: linear-gradient(
       to bottom,
       #3fc6ab,
-      orange
-    );
-    border-radius: 50px;
+      orange);
+      border-radius: 50px;
   }
 
   ::-webkit-scrollbar-track {
