@@ -12,6 +12,7 @@ body {
     height: 100%;
     text-align: center;
     margin-inline: auto;
+    position: relative;
   }
 
   /* topo */
@@ -206,8 +207,8 @@ body {
 
   #teste {
   width: 100%;
-  height: 850px;
-  padding-bottom: 500px;
+  height: 50px;
+  padding-bottom: 350px;
   background-color: #e0f6f1;
   }
 
@@ -258,6 +259,73 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #3fc
   transition: 100ms;
   border: solid #000000 1px;
 }
+
+.results{
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 10%;
+}
+.result{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: #000000 solid;
+
+  color: #3fc6ab;
+  background-color: #84dac8 ;
+}
+.shorted{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shorted p {
+  color:#000000;
+  font-family: 'Imbue', serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.shorted button{
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background: transparent;
+  font-family: 'Imbue', serif;
+  color: #000000;
+  font-size: 25px;
+}
+
+.shorted button:hover{
+  background-color: #000000;
+  transition: all 0.5s ease-in-out;
+  color:#3fc6ab
+}
+
+.popup{
+display: none;
+position: fixed;
+bottom: 1rem;
+right: 1rem;
+border: #ffffff solid 1px;
+background-color: #000000;
+padding: 1rem;
+border-radius: 5px;
+color:#3fc6ab;
+transition: all0.2s ease-in-out;
+font-style: italic;
+z-index: 3;
+}
+
+.popup.active{
+  display: block;
+  transition: all0.2s ease-in-out;
+}
+
 /*===============================YOUTUBE+passos================================*/
 
 #passos{
