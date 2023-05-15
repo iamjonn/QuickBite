@@ -46,6 +46,12 @@ body {
     -moz-user-select: none;
   }
 
+  .logo:hover{
+    border: none;
+    transition: none;
+   animation: none;
+  }
+
   .header-right {
     position: relative;
     width: 60%;
@@ -70,12 +76,25 @@ body {
     width: auto;
     font-size: 20px;
     list-style: none;
+    background-color: transparent;
   }
 
   .main-content{
     background-color: #cbb26a;
     background-image: linear-gradient(0deg, #e0f6f1 14%, #e0f6f1 71%, #3fc6ab 100%);
 
+  }
+
+  header a:hover {
+    /*color: linear-gradient(#8e6f14,#cbb26a,#8e6f14);*/
+   color: #ffffff;
+   transition: all 1s ease;
+   border: #ffffff solid 1px;
+   border-top:none;
+   border-right:none;
+   border-left:none;
+   transition: all 5s;
+   animation: slide-in 3s ease-out forwards;
   }
 
 /*-------------------TELA PRINCIPAL-----------*/
@@ -101,6 +120,13 @@ body {
   text-align: left;
   margin-top: 100px;
   margin-left: 150px;
+
+
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+
  }
 
  .PTelaP{
@@ -111,6 +137,14 @@ body {
   font-family: 'Imbue', serif;
   color: #3fc6ab;
   text-shadow: 0px 1px 0px #000000;
+
+
+
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+
  }
 
 .Pcompartilhar{
@@ -123,6 +157,14 @@ body {
   color: #000000;
   text-shadow: 10px 5px 5px #b5fcd0;
   display: flex;
+
+
+
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+
 }
 
 #Bcompartilhar{
@@ -184,17 +226,7 @@ body {
     text-decoration: none;
   }
 
-  header a:hover {
-    /*color: linear-gradient(#8e6f14,#cbb26a,#8e6f14);*/
-   color: #ffffff;
-   transition: all 1s ease;
-   border: #ffffff solid 1px;
-   border-top:none;
-   border-right:none;
-   border-left:none;
-   transition: all 5s;
-   animation: slide-in 3s ease-out forwards;
-  }
+  
 
 
   
@@ -208,7 +240,7 @@ body {
   #teste {
   width: 100%;
   height: 50px;
-  padding-bottom: 350px;
+  padding-bottom: 200px;
   background-color: #e0f6f1;
   }
 
@@ -306,6 +338,21 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #3fc
   color:#3fc6ab
 }
 
+#Linkvelho{
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000000;
+  font-size: initial;
+
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+
+}
+
+
 .popup{
 display: none;
 position: fixed;
@@ -369,14 +416,23 @@ z-index: 3;
   width: 40%;
   height: 50%;
   transform: translateY(-25%);
-  animation: slide-in-R 5s ease-out forwards;
+  animation: slide-in-R 5s ease-out forwards infinite;
   display: flex;
   margin-left: 80px;
+
+
+
+
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+
 }
 
 @keyframes slide-in-R {
   from {
-    right: -600px;
+    right: -400px;
     opacity: 0;
   }
   to {
@@ -392,6 +448,12 @@ z-index: 3;
   position: absolute;
   margin-left: 82%;
   margin-top: 380px;
+
+
+  pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 
 }
 
