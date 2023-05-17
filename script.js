@@ -5,8 +5,6 @@ const popup = document.querySelector('.popup')
 const Bcomp = document.getElementById('Bcompartilhar');
 
 
-
-
 const API_URL = 'https://api.shrtco.de/v2'
 
 form.addEventListener('submit', async function(event) {
@@ -78,3 +76,5 @@ document.getElementById("Bcompartilhar").addEventListener("click", function() {
   }, 5000);
 
 });
+
+
