@@ -571,14 +571,22 @@ z-index: 3;
     text-transform: capitalize;
   }
    
+  .menuR{
+    display: none;
+  }
 
 
+  
 
+  
   
 
 /*-------------------RESPONSIVIDADE-----------*/
 @media screen and (max-width: 768px) {
   /* topo */
+  .menuR{
+    display:flex;
+  }
 
   html {
 
@@ -647,7 +655,6 @@ html *::after {
     text-align: left;
     margin-top: 2px;
     margin-left: 10px;
-    text-shadow: 10px 5px 5px #b5fcd0;
     
    }
 
@@ -678,6 +685,83 @@ html *::after {
 
 
 
+  #Bcompartilhar{
+    display: none;
+  }
+/*========ENCURTA LINK==========*/
+#encurtador {
+  width: 100%;
+  height: 150px;
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: none;
+  border-radius: 7px;
+  background-image: url(/QuickBite/logos/bg-header-desktop.svg);
+  background-color: #000000;
+}
+
+#link {
+  width: 70%;
+  height: 55px;
+  font-size: 20px;
+  padding-left: 5px;
+  font-family: 'Imbue', serif;
+  border-radius: 4px;
+  border: none;
+}
+
+#Blink {
+  height: 50px;
+  width: 20%;
+  margin-left: 3%;
+  font-size: 100%;
+  font-family: 'Imbue', serif;
+  border-radius: 4px;
+  border: 1px;
+  background-color: #ffffff;
+}
+
+/*========PASSO A PASSO==========*/
+#passos{
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  
+}
+
+#passos iframe{
+  width: 100%;
+  height: 50%;
+  
+  
+  
+}
+
+#textpassos p{
+margin-left: 5%;
+margin-right: 15%;
+width: 80%;
+height: 10px;
+font-size: 85%;
+}
+#textpassos h2{
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  height: 50%;
+  font-size: 50px;
+  text-align: center;
+  }
+
+  #Lblack{
+    display: none;
+  }
+  #seta{
+    display: none;
+  }
 
  /*========SCROLL==========*/
  ::-webkit-scrollbar {
@@ -701,9 +785,8 @@ html *::after {
 .menuR{
 
   margin: 0;
-  display: flex;
   /* Works well with 100% width  */
-  width: 32.05em;
+  width: 100%;
   font-size: 1.5em;
   padding: 0 2.85em;
   position: relative;
@@ -802,6 +885,7 @@ html *::after {
 }
 
 .svg-container {
+  display: flex;
 
   width: 0;
   height: 0;
@@ -809,4 +893,6 @@ html *::after {
 
   .menuR{
       font-size: .8em;
+      position: sticky;
+      bottom:0 ;
   }
