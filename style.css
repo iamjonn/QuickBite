@@ -723,6 +723,10 @@ html *::after {
   background-color: #ffffff;
 }
 
+#Linkvelho{
+  display:none
+}
+
 /*========PASSO A PASSO==========*/
 #passos{
   display: flex;
