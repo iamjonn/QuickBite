@@ -24,6 +24,11 @@ form.addEventListener('submit', async function(event) {
   </div>
    </div> `
 
+    // Adicione o link encurtado à lista no popup
+  const listItem = document.createElement("li");
+  listItem.textContent = shortedResult.result.short_link;
+  shortenedLinksList.appendChild(listItem);
+
 })
 
 function copyToClipboard() {

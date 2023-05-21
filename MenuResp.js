@@ -8,6 +8,13 @@ const menuItems = menu.querySelectorAll(".menu__item");
 const menuBorder = menu.querySelector(".menu__border");
 let activeItem = menu.querySelector(".active");
 
+
+const showPopupButton = document.getElementById("show-popup");
+const popupR = document.getElementById("popupR");
+const shortenedLinksList = document.getElementById("shortened-links-list");
+
+
+
 function clickItem(item, index) {
 
     menu.style.removeProperty("--timeOut");
@@ -47,3 +54,14 @@ window.addEventListener("resize", () => {
     offsetMenuBorder(activeItem, menuBorder);
     menu.style.setProperty("--timeOut", "none");
 });
+
+//popup
+showPopupButton.addEventListener("click", () => {
+    popupR.style.display = "block";
+  });
+  
+  popupR.addEventListener("click", (event) => {
+    if (event.target === popupR) {
+      popupR.style.display = "none";
+    }
+  });
