@@ -65,6 +65,8 @@ document.getElementById("Bcompartilhar").addEventListener("click", function() {
   popup.classList.add('active')
   
 
+
+//01101010 01101111 01101110 
   setTimeout(function () {
     popup.classList.remove('active')
   }, 4000);

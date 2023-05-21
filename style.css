@@ -62,6 +62,12 @@ body {
     align-items: center;
   }
 
+
+
+
+
+  /* 01101010 01101111 01101110  */
+
   .header-right ul {
     align-self: center;
     display: flex;
@@ -821,7 +827,7 @@ font-size: 85%;
    color: white;
    padding: 10px;
    border: black solid 1px;
-   
+   font-family: 'Imbue', serif;
 }
 
 .popup-content ul {
@@ -842,7 +848,7 @@ font-size: 85%;
   padding: 0 2.85em;
   position: relative;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--bgColorMenu);
   
 }
