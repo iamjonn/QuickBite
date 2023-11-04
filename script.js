@@ -4,31 +4,26 @@ const resultsContainer = document.querySelector('.results')
 const popup = document.querySelector('.popup')
 const Bcomp = document.getElementById('Bcompartilhar');
 
-
-const API_URL = 'https://api.shrtco.de/v2'
-
 form.addEventListener('submit', async function(event) {
   event.preventDefault()
   
   const inputValue = input.value
 
-  const result = await fetch (`${API_URL}/shorten?url=${inputValue}`)
+  const result = await fetch (`https://tinyurl.com/api-create.php?url=${inputValue}`)
 
-  const shortedResult = await result.json()
+  const shortedResult = await result.text()
 
   resultsContainer.innerHTML = ` <div class="result">
-  <p id = "Linkvelho" >${shortedResult.result.original_link}</p>
+  <p id = "Linkvelho" >${inputValue}</p>
   <div class="shorted">
-    <p>${shortedResult.result.short_link}</p>
+    <p>${shortedResult}</p>
     <button onclick="copyToClipboard()">Copiar</button>
   </div>
    </div> `
 
-    // Adicione o link encurtado à lista no popup
   const listItem = document.createElement("li");
-  listItem.textContent = shortedResult.result.short_link;
+  listItem.textContent = shortedResult;
   shortenedLinksList.appendChild(listItem);
-
 })
 
 function copyToClipboard() {
@@ -83,5 +78,3 @@ document.getElementById("Bcompartilhar").addEventListener("click", function() {
   }, 5000);
 
 });
-
-
